@@ -1,0 +1,492 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>js基础</title>
+    <meta name="generator" content="VuePress 1.9.7">
+    
+    <meta name="description" content="">
+    
+    <link rel="preload" href="/vuepress/assets/css/0.styles.c72aa0eb.css" as="style"><link rel="preload" href="/vuepress/assets/js/app.7a2a8262.js" as="script"><link rel="preload" href="/vuepress/assets/js/2.91b52501.js" as="script"><link rel="preload" href="/vuepress/assets/js/16.6bc2ff7b.js" as="script"><link rel="prefetch" href="/vuepress/assets/js/10.f38cb28a.js"><link rel="prefetch" href="/vuepress/assets/js/11.01629209.js"><link rel="prefetch" href="/vuepress/assets/js/12.6169357e.js"><link rel="prefetch" href="/vuepress/assets/js/13.50509f65.js"><link rel="prefetch" href="/vuepress/assets/js/14.dc219a31.js"><link rel="prefetch" href="/vuepress/assets/js/15.54e254cb.js"><link rel="prefetch" href="/vuepress/assets/js/17.1a8ab1b2.js"><link rel="prefetch" href="/vuepress/assets/js/18.26383fff.js"><link rel="prefetch" href="/vuepress/assets/js/19.7dd05a8c.js"><link rel="prefetch" href="/vuepress/assets/js/20.ccabacbd.js"><link rel="prefetch" href="/vuepress/assets/js/21.36694dac.js"><link rel="prefetch" href="/vuepress/assets/js/22.ecf6e3fc.js"><link rel="prefetch" href="/vuepress/assets/js/23.806b4dad.js"><link rel="prefetch" href="/vuepress/assets/js/24.b15980f8.js"><link rel="prefetch" href="/vuepress/assets/js/25.7af17b9e.js"><link rel="prefetch" href="/vuepress/assets/js/26.aa5bd175.js"><link rel="prefetch" href="/vuepress/assets/js/27.29d233f2.js"><link rel="prefetch" href="/vuepress/assets/js/28.db118063.js"><link rel="prefetch" href="/vuepress/assets/js/29.f42dc648.js"><link rel="prefetch" href="/vuepress/assets/js/3.c120149f.js"><link rel="prefetch" href="/vuepress/assets/js/30.a688960a.js"><link rel="prefetch" href="/vuepress/assets/js/31.54c6c164.js"><link rel="prefetch" href="/vuepress/assets/js/32.3cd371ac.js"><link rel="prefetch" href="/vuepress/assets/js/33.2e7a9de0.js"><link rel="prefetch" href="/vuepress/assets/js/34.2b96fa49.js"><link rel="prefetch" href="/vuepress/assets/js/35.d9f6fcf6.js"><link rel="prefetch" href="/vuepress/assets/js/36.43750f97.js"><link rel="prefetch" href="/vuepress/assets/js/37.3f3a61ae.js"><link rel="prefetch" href="/vuepress/assets/js/38.6ed22093.js"><link rel="prefetch" href="/vuepress/assets/js/4.0efb1a05.js"><link rel="prefetch" href="/vuepress/assets/js/5.85b96d4f.js"><link rel="prefetch" href="/vuepress/assets/js/6.863f2ac0.js"><link rel="prefetch" href="/vuepress/assets/js/7.10f8bc48.js"><link rel="prefetch" href="/vuepress/assets/js/8.d9f0a0d3.js"><link rel="prefetch" href="/vuepress/assets/js/9.d22c41c6.js">
+    <link rel="stylesheet" href="/vuepress/assets/css/0.styles.c72aa0eb.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/vuepress/" class="home-link router-link-active"><img src="https://www.vuepress.cn/hero.png" alt="" class="logo"> <!----></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/vuepress/" class="nav-link">
+  Home
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="前端基础" class="dropdown-title"><span class="title">前端基础</span> <span class="arrow down"></span></button> <button type="button" aria-label="前端基础" class="mobile-dropdown-title"><span class="title">前端基础</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><h4>
+          环境相关
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/vuepress/views/basis/nvm安装node.html" class="nav-link">
+  nvm安装
+</a></li><li class="dropdown-subitem"><a href="/vuepress/views/basis/git使用.html" class="nav-link">
+  git使用
+</a></li><li class="dropdown-subitem"><a href="/vuepress/views/basis/vscode拓展.html" class="nav-link">
+  vscode拓展和设置
+</a></li></ul></li><li class="dropdown-item"><h4>
+          前端三大件
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="https://www.w3school.com.cn/html/index.asp" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  HTML
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li><li class="dropdown-subitem"><a href="https://www.w3school.com.cn/css/index.asp" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  CSS
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li><li class="dropdown-subitem"><a href="https://www.w3school.com.cn/js/index.asp" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  JavaScript
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li><li class="dropdown-subitem"><a href="/vuepress/views/basis/js基础.html" class="nav-link">
+  js一些方法
+</a></li></ul></li><li class="dropdown-item"><h4>
+          jQuery
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="https://www.w3school.com.cn/jquery/index.asp" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  w3教程
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li><li class="dropdown-subitem"><a href="http://hemin.cn/jq/" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  在线手册
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li><li class="dropdown-subitem"><a href="/vuepress/views/basis/task1.html" class="nav-link">
+  案例1
+</a></li><li class="dropdown-subitem"><a href="/vuepress/views/basis/task2.html" class="nav-link">
+  案例2
+</a></li></ul></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="服务端" class="dropdown-title"><span class="title">服务端</span> <span class="arrow down"></span></button> <button type="button" aria-label="服务端" class="mobile-dropdown-title"><span class="title">服务端</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><h4>
+          nodejs
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/vuepress/views/server/nodejs1.html" class="nav-link">
+  nodejs学习
+</a></li><li class="dropdown-subitem"><a href="/vuepress/views/server/nodejs2.html" class="nav-link">
+  nodejs服务端
+</a></li><li class="dropdown-subitem"><a href="/vuepress/views/server/express1.html" class="nav-link">
+  express1
+</a></li><li class="dropdown-subitem"><a href="/vuepress/views/server/express2.html" class="nav-link">
+  express2
+</a></li><li class="dropdown-subitem"><a href="/vuepress/views/server/sql.html" class="nav-link">
+  SQL
+</a></li><li class="dropdown-subitem"><a href="/vuepress/views/server/websocket基本使用.html" class="nav-link">
+  websocket基本使用
+</a></li></ul></li><li class="dropdown-item"><h4>
+          Linux相关
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/vuepress/views/server/Linux常用命令.html" class="nav-link">
+  Linux常用命令
+</a></li><li class="dropdown-subitem"><a href="/vuepress/views/server/LINUX安装nginx.html" class="nav-link">
+  Linux安装nginx
+</a></li></ul></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="vue" class="dropdown-title"><span class="title">vue</span> <span class="arrow down"></span></button> <button type="button" aria-label="vue" class="mobile-dropdown-title"><span class="title">vue</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="https://cn.vuejs.org/" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  vue官网
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li><li class="dropdown-item"><h4>
+          vue3
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/vuepress/views/vue/vue3基础.html" class="nav-link">
+  vue3基础
+</a></li><li class="dropdown-subitem"><a href="/vuepress/views/vue/vue3项目.html" class="nav-link">
+  vue3项目
+</a></li></ul></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="微信小程序" class="dropdown-title"><span class="title">微信小程序</span> <span class="arrow down"></span></button> <button type="button" aria-label="微信小程序" class="mobile-dropdown-title"><span class="title">微信小程序</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="https://developers.weixin.qq.com/miniprogram/dev/framework/" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  小程序官方文档
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li><li class="dropdown-item"><h4>
+          item
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/vuepress/2.html" class="nav-link">
+  2
+</a></li><li class="dropdown-subitem"><a href="/vuepress/3.html" class="nav-link">
+  3
+</a></li></ul></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="uni-app" class="dropdown-title"><span class="title">uni-app</span> <span class="arrow down"></span></button> <button type="button" aria-label="uni-app" class="mobile-dropdown-title"><span class="title">uni-app</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="https://uniapp.dcloud.net.cn/" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  uni-app官网
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li><li class="dropdown-item"><!----> <a href="/vuepress/views/uniapp/uniapp基础.html" class="nav-link">
+  uniapp基础
+</a></li><li class="dropdown-item"><!----> <a href="/vuepress/views/uniapp/uniapp支付功能.html" class="nav-link">
+  支付功能
+</a></li><li class="dropdown-item"><!----> <a href="/vuepress/views/uniapp/request封装.html" class="nav-link">
+  request封装
+</a></li><li class="dropdown-item"><!----> <a href="/vuepress/views/uniapp/uniapp开发总结.html" class="nav-link">
+  开发总结
+</a></li><li class="dropdown-item"><!----> <a href="/vuepress/views/uniapp/components.html" class="nav-link">
+  自定义组件
+</a></li><li class="dropdown-item"><!----> <a href="/vuepress/views/uniapp/uniapp插件.html" class="nav-link">
+  插件
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="React" class="dropdown-title"><span class="title">React</span> <span class="arrow down"></span></button> <button type="button" aria-label="React" class="mobile-dropdown-title"><span class="title">React</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="https://react.docschina.org/" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  React官网
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li><li class="dropdown-item"><h4>
+          item
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/vuepress/2.html" class="nav-link">
+  2
+</a></li><li class="dropdown-subitem"><a href="/vuepress/3.html" class="nav-link">
+  3
+</a></li></ul></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="前端面试题" class="dropdown-title"><span class="title">前端面试题</span> <span class="arrow down"></span></button> <button type="button" aria-label="前端面试题" class="mobile-dropdown-title"><span class="title">前端面试题</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/vuepress/views/question/前端面试题整合.html" class="nav-link">
+  面试题2020
+</a></li><li class="dropdown-item"><!----> <a href="/vuepress/views/question/字节面试题.html" class="nav-link">
+  字节面试题
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="link" class="dropdown-title"><span class="title">link</span> <span class="arrow down"></span></button> <button type="button" aria-label="link" class="mobile-dropdown-title"><span class="title">link</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="http://caibaojian.com/vuepress/" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  vuepress
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li><li class="dropdown-item"><!----> <a href="https://gitee.com/feng644586334/vuepress" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  本项目地址
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li></ul></div></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/vuepress/" class="nav-link">
+  Home
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="前端基础" class="dropdown-title"><span class="title">前端基础</span> <span class="arrow down"></span></button> <button type="button" aria-label="前端基础" class="mobile-dropdown-title"><span class="title">前端基础</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><h4>
+          环境相关
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/vuepress/views/basis/nvm安装node.html" class="nav-link">
+  nvm安装
+</a></li><li class="dropdown-subitem"><a href="/vuepress/views/basis/git使用.html" class="nav-link">
+  git使用
+</a></li><li class="dropdown-subitem"><a href="/vuepress/views/basis/vscode拓展.html" class="nav-link">
+  vscode拓展和设置
+</a></li></ul></li><li class="dropdown-item"><h4>
+          前端三大件
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="https://www.w3school.com.cn/html/index.asp" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  HTML
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li><li class="dropdown-subitem"><a href="https://www.w3school.com.cn/css/index.asp" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  CSS
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li><li class="dropdown-subitem"><a href="https://www.w3school.com.cn/js/index.asp" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  JavaScript
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li><li class="dropdown-subitem"><a href="/vuepress/views/basis/js基础.html" class="nav-link">
+  js一些方法
+</a></li></ul></li><li class="dropdown-item"><h4>
+          jQuery
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="https://www.w3school.com.cn/jquery/index.asp" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  w3教程
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li><li class="dropdown-subitem"><a href="http://hemin.cn/jq/" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  在线手册
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li><li class="dropdown-subitem"><a href="/vuepress/views/basis/task1.html" class="nav-link">
+  案例1
+</a></li><li class="dropdown-subitem"><a href="/vuepress/views/basis/task2.html" class="nav-link">
+  案例2
+</a></li></ul></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="服务端" class="dropdown-title"><span class="title">服务端</span> <span class="arrow down"></span></button> <button type="button" aria-label="服务端" class="mobile-dropdown-title"><span class="title">服务端</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><h4>
+          nodejs
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/vuepress/views/server/nodejs1.html" class="nav-link">
+  nodejs学习
+</a></li><li class="dropdown-subitem"><a href="/vuepress/views/server/nodejs2.html" class="nav-link">
+  nodejs服务端
+</a></li><li class="dropdown-subitem"><a href="/vuepress/views/server/express1.html" class="nav-link">
+  express1
+</a></li><li class="dropdown-subitem"><a href="/vuepress/views/server/express2.html" class="nav-link">
+  express2
+</a></li><li class="dropdown-subitem"><a href="/vuepress/views/server/sql.html" class="nav-link">
+  SQL
+</a></li><li class="dropdown-subitem"><a href="/vuepress/views/server/websocket基本使用.html" class="nav-link">
+  websocket基本使用
+</a></li></ul></li><li class="dropdown-item"><h4>
+          Linux相关
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/vuepress/views/server/Linux常用命令.html" class="nav-link">
+  Linux常用命令
+</a></li><li class="dropdown-subitem"><a href="/vuepress/views/server/LINUX安装nginx.html" class="nav-link">
+  Linux安装nginx
+</a></li></ul></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="vue" class="dropdown-title"><span class="title">vue</span> <span class="arrow down"></span></button> <button type="button" aria-label="vue" class="mobile-dropdown-title"><span class="title">vue</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="https://cn.vuejs.org/" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  vue官网
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li><li class="dropdown-item"><h4>
+          vue3
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/vuepress/views/vue/vue3基础.html" class="nav-link">
+  vue3基础
+</a></li><li class="dropdown-subitem"><a href="/vuepress/views/vue/vue3项目.html" class="nav-link">
+  vue3项目
+</a></li></ul></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="微信小程序" class="dropdown-title"><span class="title">微信小程序</span> <span class="arrow down"></span></button> <button type="button" aria-label="微信小程序" class="mobile-dropdown-title"><span class="title">微信小程序</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="https://developers.weixin.qq.com/miniprogram/dev/framework/" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  小程序官方文档
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li><li class="dropdown-item"><h4>
+          item
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/vuepress/2.html" class="nav-link">
+  2
+</a></li><li class="dropdown-subitem"><a href="/vuepress/3.html" class="nav-link">
+  3
+</a></li></ul></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="uni-app" class="dropdown-title"><span class="title">uni-app</span> <span class="arrow down"></span></button> <button type="button" aria-label="uni-app" class="mobile-dropdown-title"><span class="title">uni-app</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="https://uniapp.dcloud.net.cn/" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  uni-app官网
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li><li class="dropdown-item"><!----> <a href="/vuepress/views/uniapp/uniapp基础.html" class="nav-link">
+  uniapp基础
+</a></li><li class="dropdown-item"><!----> <a href="/vuepress/views/uniapp/uniapp支付功能.html" class="nav-link">
+  支付功能
+</a></li><li class="dropdown-item"><!----> <a href="/vuepress/views/uniapp/request封装.html" class="nav-link">
+  request封装
+</a></li><li class="dropdown-item"><!----> <a href="/vuepress/views/uniapp/uniapp开发总结.html" class="nav-link">
+  开发总结
+</a></li><li class="dropdown-item"><!----> <a href="/vuepress/views/uniapp/components.html" class="nav-link">
+  自定义组件
+</a></li><li class="dropdown-item"><!----> <a href="/vuepress/views/uniapp/uniapp插件.html" class="nav-link">
+  插件
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="React" class="dropdown-title"><span class="title">React</span> <span class="arrow down"></span></button> <button type="button" aria-label="React" class="mobile-dropdown-title"><span class="title">React</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="https://react.docschina.org/" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  React官网
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li><li class="dropdown-item"><h4>
+          item
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/vuepress/2.html" class="nav-link">
+  2
+</a></li><li class="dropdown-subitem"><a href="/vuepress/3.html" class="nav-link">
+  3
+</a></li></ul></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="前端面试题" class="dropdown-title"><span class="title">前端面试题</span> <span class="arrow down"></span></button> <button type="button" aria-label="前端面试题" class="mobile-dropdown-title"><span class="title">前端面试题</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/vuepress/views/question/前端面试题整合.html" class="nav-link">
+  面试题2020
+</a></li><li class="dropdown-item"><!----> <a href="/vuepress/views/question/字节面试题.html" class="nav-link">
+  字节面试题
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="link" class="dropdown-title"><span class="title">link</span> <span class="arrow down"></span></button> <button type="button" aria-label="link" class="mobile-dropdown-title"><span class="title">link</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="http://caibaojian.com/vuepress/" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  vuepress
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li><li class="dropdown-item"><!----> <a href="https://gitee.com/feng644586334/vuepress" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  本项目地址
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li></ul></div></div> <!----></nav>  <ul class="sidebar-links"><li><section class="sidebar-group depth-0"><p class="sidebar-heading open"><span>js基础</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/vuepress/views/basis/js%E5%9F%BA%E7%A1%80.html#js基础" class="sidebar-link">js基础</a><ul class="sidebar-sub-headers"></ul></li><li><a href="/vuepress/views/basis/js%E5%9F%BA%E7%A1%80.html#一、dom操作" class="sidebar-link">一、dom操作</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/vuepress/views/basis/js%E5%9F%BA%E7%A1%80.html#_1-获取节点" class="sidebar-link">1.获取节点</a></li><li class="sidebar-sub-header"><a href="/vuepress/views/basis/js%E5%9F%BA%E7%A1%80.html#_2-创建节点" class="sidebar-link">2.创建节点</a></li><li class="sidebar-sub-header"><a href="/vuepress/views/basis/js%E5%9F%BA%E7%A1%80.html#_3-增加节点" class="sidebar-link">3.增加节点</a></li><li class="sidebar-sub-header"><a href="/vuepress/views/basis/js%E5%9F%BA%E7%A1%80.html#_4-删除节点" class="sidebar-link">4.删除节点</a></li><li class="sidebar-sub-header"><a href="/vuepress/views/basis/js%E5%9F%BA%E7%A1%80.html#_5-获取元素相关的节点" class="sidebar-link">5.获取元素相关的节点</a></li><li class="sidebar-sub-header"><a href="/vuepress/views/basis/js%E5%9F%BA%E7%A1%80.html#_6-获取元素文本" class="sidebar-link">6.获取元素文本</a></li><li class="sidebar-sub-header"><a href="/vuepress/views/basis/js%E5%9F%BA%E7%A1%80.html#_7-样式操作" class="sidebar-link">7.样式操作</a></li><li class="sidebar-sub-header"><a href="/vuepress/views/basis/js%E5%9F%BA%E7%A1%80.html#字符串方法" class="sidebar-link">字符串方法</a></li><li class="sidebar-sub-header"><a href="/vuepress/views/basis/js%E5%9F%BA%E7%A1%80.html#数组方法" class="sidebar-link">数组方法</a></li><li class="sidebar-sub-header"><a href="/vuepress/views/basis/js%E5%9F%BA%E7%A1%80.html#date时间对象" class="sidebar-link">Date时间对象</a></li><li class="sidebar-sub-header"><a href="/vuepress/views/basis/js%E5%9F%BA%E7%A1%80.html#数据类型" class="sidebar-link">数据类型</a></li><li class="sidebar-sub-header"><a href="/vuepress/views/basis/js%E5%9F%BA%E7%A1%80.html#new操作符在创建实例的经历的阶段" class="sidebar-link">new操作符在创建实例的经历的阶段</a></li><li class="sidebar-sub-header"><a href="/vuepress/views/basis/js%E5%9F%BA%E7%A1%80.html#闭包" class="sidebar-link">闭包</a></li><li class="sidebar-sub-header"><a href="/vuepress/views/basis/js%E5%9F%BA%E7%A1%80.html#原型" class="sidebar-link">原型</a></li><li class="sidebar-sub-header"><a href="/vuepress/views/basis/js%E5%9F%BA%E7%A1%80.html#深拷贝" class="sidebar-link">深拷贝</a></li><li class="sidebar-sub-header"><a href="/vuepress/views/basis/js%E5%9F%BA%E7%A1%80.html#es6" class="sidebar-link">ES6</a></li><li class="sidebar-sub-header"><a href="/vuepress/views/basis/js%E5%9F%BA%E7%A1%80.html#promise" class="sidebar-link">Promise</a></li><li class="sidebar-sub-header"><a href="/vuepress/views/basis/js%E5%9F%BA%E7%A1%80.html#http的状态码" class="sidebar-link">http的状态码</a></li><li class="sidebar-sub-header"><a href="/vuepress/views/basis/js%E5%9F%BA%E7%A1%80.html#get与post的区别" class="sidebar-link">get与post的区别</a></li><li class="sidebar-sub-header"><a href="/vuepress/views/basis/js%E5%9F%BA%E7%A1%80.html#ajax的过程" class="sidebar-link">ajax的过程</a></li></ul></li></ul></section></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h2 id="js基础"><a href="#js基础" class="header-anchor">#</a> js基础</h2> <h2 id="一、dom操作"><a href="#一、dom操作" class="header-anchor">#</a> 一、dom操作</h2> <h3 id="_1-获取节点"><a href="#_1-获取节点" class="header-anchor">#</a> 1.获取节点</h3> <p>document.<strong>getElementById</strong>(idName)      //通过id名来获取元素，返回一个元素对象</p> <p>document.<strong>getElementsByName</strong>(name)    //通过name属性获取元素，返回元素对象数组</p> <p>document.<strong>getElementsByClassName</strong>(className)  //通过class名来获取元素，返回元素对象数组（ie8以上）</p> <p>document.<strong>getElementsByTagName</strong>(tagName)    //通过标签名获取元素，返回元素对象数组</p> <h3 id="_2-创建节点"><a href="#_2-创建节点" class="header-anchor">#</a> 2.创建节点</h3> <p>document.<strong>createElement</strong>(&quot;h3&quot;)    //创建一个html元素，这里以创建h3元素为例</p> <p>document.<strong>createTextNode</strong>(String); //创建一个文本节点；</p> <p>document.<strong>createAttribute</strong>(&quot;class&quot;); //创建一个属性节点，这里以创建class属性为例</p> <h3 id="_3-增加节点"><a href="#_3-增加节点" class="header-anchor">#</a> 3.增加节点</h3> <p>element.<strong>appendChild</strong>(Node);  //往element内部最后面添加一个节点，参数是节点类型</p> <p>elelment.<strong>insertBefore</strong>(newNode,existingNode); //在element内部的中在existingNode前面插入newNode</p> <h3 id="_4-删除节点"><a href="#_4-删除节点" class="header-anchor">#</a> 4.删除节点</h3> <p>element.<strong>removeChild</strong>(Node)   //删除当前节点下指定的子节点，删除成功返回该被删除的节点，否则返回null</p> <h3 id="_5-获取元素相关的节点"><a href="#_5-获取元素相关的节点" class="header-anchor">#</a> 5.获取元素相关的节点</h3> <p>element.<strong>parentNode</strong>//返回当前元素的父节点对象</p> <p>element.<strong>chlidren</strong>//返回当前元素所有子元素节点对象，只返回HTML节点</p> <p>element.<strong>chilidNodes</strong> //返回当前元素多有子节点，包括文本，HTML，属性节点。（回车也会当做一个节点）</p> <p>element.<strong>firstChild</strong> //返回当前<strong>节点</strong>的第一个子节点对象    （<strong>节点</strong>）</p> <p>element.<strong>firstElementChild</strong> //返回当前<strong>元素</strong>的第一个子节点对象   （<strong>元素</strong>）</p> <p>element.<strong>lastChild</strong>//返回当前<strong>节点</strong>的最后一个子节点对象    （<strong>节点</strong>）</p> <p>element.<strong>lastElementChild</strong> //返回当前<strong>元素</strong>的第一个子节点对象   （<strong>元素</strong>）</p> <p>element.<strong>nextSibling</strong>//返回当前<strong>节点</strong>的下一个同级<strong>节点</strong> 没有就返回null  （<strong>节点</strong>）</p> <p>element.<strong>nextElementSibling</strong>//返回当前<strong>元素</strong>的下一个同级<strong>元素</strong> 没有就返回null  （<strong>元素</strong>）</p> <p>element.<strong>previousSibling</strong> //返回当前<strong>节点</strong>上一个同级<strong>节点</strong> 没有就返回null  （<strong>节点</strong>）</p> <p>element.<strong>previousElementSibling</strong> //返回当前<strong>元素</strong>上一个同级<strong>元素</strong> 没有就返回null  （<strong>元素</strong>）</p> <h3 id="_6-获取元素文本"><a href="#_6-获取元素文本" class="header-anchor">#</a> 6.获取元素文本</h3> <p>element.<strong>innerHTML</strong>//返回元素的所有文本，包括html代码</p> <p>element.<strong>innerText</strong> //返回当前元素的自身及子代所有文本值，只是文本内容，不包括html代码</p> <h3 id="_7-样式操作"><a href="#_7-样式操作" class="header-anchor">#</a> 7.样式操作</h3> <p>document.getElementById(  &quot; id &quot;  ).style.color=&quot;red&quot;;</p> <h3 id="字符串方法"><a href="#字符串方法" class="header-anchor">#</a> 字符串方法</h3> <p>String charAt 返回在指定位置的字符。 charCodeAt 返回在指定的位置的字符的 Unicode 编码。 IndexOf 返回某个指定的字符串值在字符串中首次出现的位置。 slice 提取字符串的片断，并在新的字符串中返回被提取的部分。 split 把字符串分割为字符串数组。 toLowerCase 把字符串转换为小写。 toUpperCase 把字符串转换为大写。 trim 去除字符串两边的空白</p> <p>模板字符串</p> <div class="language- extra-class"><pre class="language-text"><code>let name = '张三'
+let str1 = `名字${name}`
+</code></pre></div><h3 id="数组方法"><a href="#数组方法" class="header-anchor">#</a> 数组方法</h3> <ul><li><p>join()</p> <p>数组转字符串，参数为分隔符。返回字符串，原数组不变。</p></li> <li><p>push()和pop()</p> <p>向数组的末尾添加元素，返回数组长度，原数组改变。</p> <p>删除数组的末尾元素，返回删除的元素，原数组改变</p></li> <li><p>shift() 和 unshift()</p> <p>删除数组的第一个元素，返回删除元素，原数组改变。</p> <p>向数组的开头增加元素，返回数组长度，原数组改变。</p></li> <li><p>sort()</p> <p>对数组的元素进行排序，默认按照字符编码排序，参数为函数。返回新数组，原数组改变。</p> <div class="language- extra-class"><pre class="language-text"><code>    let arr1 = arr.sort(function (a, b) {
+        return a - b
+    }) // 升序排序
+</code></pre></div></li> <li><p>reverse() 反转数组的元素顺序。返回新数组，原数组改变。</p></li> <li><p>concat() 合并数组，返回新数组，原数组不变。</p></li> <li><p>slice() 数组截取</p> <p>arrayObject.slice(start,end)，返回所选范围的元素的数组，原数组不变。</p> <div class="language- extra-class"><pre class="language-text"><code>    // let arr1 = arr.slice(1,3) //从索引为1开始到索引为3之前结束
+    // let arr1 = arr.slice(2) //从索引为2开始全部
+    // let arr1 = arr.slice(-1)  // 从末尾元素开始选
+</code></pre></div></li> <li><p>splice() 删除或新增</p> <p>arrayObject.splice(index,howmany,item1,.....,itemX)</p> <p>从数组中添加或删除元素，返回被删除的元素数组，原数组改变</p> <div class="language- extra-class"><pre class="language-text"><code>let arr1 = arr.splice(1, 2, 'new') //从索引为1开始删除两个元素，并在该位置添加元素
+</code></pre></div></li> <li><p>indexOf()和 lastIndexOf()</p> <p>返回参数在数组中的位置，原数组不变。</p> <p>返回参数在数组中最后出现的位置，原数组不变。</p></li> <li><p>includes() 判断一个数组是否包含一个指定的值。返回布尔值，原数组不变。</p></li> <li><p>find()和findIndex()</p> <p>返回数组中符合条件的第一个元素，参数为函数，原数组不变。</p> <div class="language- extra-class"><pre class="language-text"><code>    let arr1 = arr.find(function (e) {
+        return e &gt; 2
+    })  
+</code></pre></div><p>返回数组中符合条件的第一个元素的索引。</p></li> <li><p>flat() 多维数组转一维数组，返回新数组，原数组不变。</p></li> <li><p>forEach() 和map()</p> <p>遍历数组，forEach没有返回，map返回新数组。</p> <div class="language- extra-class"><pre class="language-text"><code>    // arr.forEach(e, i, arr =&gt; {
+    //     console.log(e, i, arr)
+    // });
+    let arr1 = arr.map(e, i, arr =&gt; {
+        return e = e + 1
+    })
+</code></pre></div></li> <li><p>filter() 返回数组中符合条件的全部元素，参数为函数，原数组不变。</p> <div class="language- extra-class"><pre class="language-text"><code>    let arr1 = arr.filter((e) =&gt; {
+        return e &gt; 3
+    })
+</code></pre></div></li> <li><p>every() 和 some()</p> <p>every()是对数组中每一项运行给定函数，如果该函数对每一项返回true,则返回true。</p> <p>some()是对数组中每一项运行给定函数，如果该函数对任一项返回true,则返回true。</p></li></ul> <h3 id="date时间对象"><a href="#date时间对象" class="header-anchor">#</a> Date时间对象</h3> <p>getFullYear 从 Date 对象以四位数字返回年份。 getMonth 从 Date 对象返回月份 (0 ~ 11)。 getDate 从 Date 对象返回一个月中的某一天 (1 ~ 31)。 getHours 返回 Date 对象的小时 (0 ~ 23)。 getMinutes 返回 Date 对象的分钟 (0 ~ 59)。 getSeconds 返回 Date 对象的秒数 (0 ~ 59)。 getDay 从 Date 对象返回一周中的某一天 (0 ~ 6)。 getTime 返回 1970 年 1 月 1 日至今的毫秒数。</p> <div class="language- extra-class"><pre class="language-text"><code>    let time = new Date()
+    let year = time.getFullYear()
+    let mon = time.getMonth() + 1
+    let day = time.getDate()
+    let hou = time.getHours()
+    let min = time.getMinutes()
+    let timeStr = time.getTime()
+    console.log(time)
+    console.log(year, mon, day, hou, min)
+    console.log(timeStr)
+</code></pre></div><h3 id="数据类型"><a href="#数据类型" class="header-anchor">#</a> 数据类型</h3> <p>1.基本数据类型（栈）：Number，String，Boolean，Undefined，Null，Symbol(es6)</p> <p>2.引用数据类型（堆）：Object,Array,Function , Date</p> <div class="language- extra-class"><pre class="language-text"><code>    // 判断数据类型  Object.prototype.toString.call()
+    console.log(Object.prototype.toString.call('1')) //[object String]
+    console.log(Object.prototype.toString.call(true)) //[object Boolean]
+    console.log(Object.prototype.toString.call([])) //[object Array]
+    console.log(Object.prototype.toString.call({})) //[object Object]
+</code></pre></div><h3 id="new操作符在创建实例的经历的阶段"><a href="#new操作符在创建实例的经历的阶段" class="header-anchor">#</a> new操作符在创建实例的经历的阶段</h3> <p>new创建了一个对象，共经历了4个阶段：</p> <p>\1. 创建一个空对象</p> <p>\2. 设置原型链</p> <p>\3. 让实例化对象中的this指向对象，并执行函数体</p> <p>\4. 返回创建的对象</p> <h3 id="闭包"><a href="#闭包" class="header-anchor">#</a> 闭包</h3> <p>函数内部嵌套的函数</p> <p>有权访问另一个函数作用域中的变量的函数。常见方式，就是在一个函数内部创建另一个函数。</p> <p>功能：在函数外，访问函数内的变量；保持引用，不被回收。创建私有环境</p> <p>缺点：内存泄漏</p> <div class="language- extra-class"><pre class="language-text"><code>        function fn() {
+            let a = 11
+            return function () {
+                console.log(a)
+            }
+        }
+        console.log(fn())
+        let fn1 = fn()
+        fn1()
+</code></pre></div><h3 id="原型"><a href="#原型" class="header-anchor">#</a> 原型</h3> <p>1.每一个函数都有一个'prototype'属性,即显示原型。prototype(对象属性)的所有属性和方法，都会被构造函数的实例继承。</p> <p>2.每一个实例对象都有一个'__ proto __ '属性，即隐式原型。</p> <p>原型链</p> <p>获取对象属性时，如果对象本身没有这个属性，就会去找这个对象'__ proto __ '属性指向上一个对象，一直找到最顶层(<code>Object.prototype</code>)为止。Object.prototype对象也有<strong>proto</strong>属性值为null</p> <div class="language- extra-class"><pre class="language-text"><code>    // 原型
+    // 获取原型的方法
+    // 1.对象的 '__proto__'
+    // 2.构造函数的prototype
+
+    // let cat = {
+    //     name: '喵喵'
+    // }
+    // cat.__proto__.eat = function () {
+    //     console.log('吃鱼')
+    // }
+    // cat.eat()
+
+    // function Cat(name, age) {
+    //     this.name = name
+    //     this.age = age
+    // }
+
+    // let cat = new Cat('喵喵', 2)
+    // Cat.prototype.eat = function () {
+    //     console.log('吃鱼')
+    // }
+    // console.log(cat)
+    // cat.eat()
+</code></pre></div><h3 id="深拷贝"><a href="#深拷贝" class="header-anchor">#</a> 深拷贝</h3> <div class="language- extra-class"><pre class="language-text"><code>    // 深拷贝浅拷贝
+
+    // Object.assign() 对象只有一层时是深拷贝
+    // let obj = {
+    //     name: '张三',
+    //     age: 18
+    // }
+
+    // let obj1 = Object.assign({}, obj)
+    // obj.age = 20
+    // console.log(obj)
+    // console.log(obj1)
+
+    // JSON.stringify 和 JSON.parse 实现深拷贝，但不能拷贝对象中的方法
+    // let obj = {
+    //     name: '张三',
+    //     age: 18,
+    //     like: {
+    //         a: 11,
+    //         b: 22
+    //     }
+    // }
+    // let str = JSON.stringify(obj)
+    // let obj1 = JSON.parse(str)
+    // obj.like.a = 10
+    // console.log(obj)
+    // console.log(obj1)
+
+    // 递归实现深拷贝
+    let obj = {
+        name: '张三',
+        age: 18,
+        like: {
+            a: 11,
+            b: 22
+        },
+        arr: [1, 2, 3, 4]
+    }
+
+    function copy(obj) {
+        let newObj = obj.constructor === Array ? [] : {};
+        for (let i in obj) {
+            if (obj[i] instanceof(Object || Array)) {
+                newObj[i] = copy(obj[i])
+            } else {
+                newObj[i] = obj[i]
+            }
+        }
+        return newObj
+    }
+
+    let obj1 = copy(obj)
+    obj.age = 20
+    obj.like.a = 15
+    obj.arr.push(5)
+    console.log(obj)
+    console.log(obj1)
+</code></pre></div><h3 id="es6"><a href="#es6" class="header-anchor">#</a> ES6</h3> <p>1.let 和const</p> <p>var定义变量，会有变量声名提升，let不会。</p> <p>var定义全局的变量，let和const定义块级的变量。</p> <p>const定义常量。for循环用let。</p> <p>2.模板字符串</p> <div class="language- extra-class"><pre class="language-text"><code>// 模板字符串
+    let box = document.getElementById('box')
+    let name = '张三'
+    let age = '18'
+    let str = &quot;&lt;ul&gt;&lt;li&gt;&quot; + name + &quot;&lt;/li&gt;&lt;/ul&gt;&quot;
+    let str1 = `&lt;ul&gt;&lt;li&gt;${name}&lt;/li&gt;&lt;/ul&gt;`
+    box.innerHTML = str1
+</code></pre></div><p>3..函数默认值</p> <div class="language- extra-class"><pre class="language-text"><code>    // 函数默认值
+    function add(a = 10, b = 20) {
+        return a + b
+    }
+    console.log(add()) //30
+</code></pre></div><p>函数剩余参数</p> <div class="language- extra-class"><pre class="language-text"><code>    // 剩余参数 将多个参数合并为一个数组
+
+    function fn(...arg) {
+        console.log(arg)
+    }
+    fn(1, 2, 3, 4, 5, 6)
+</code></pre></div><p>4.拓展运算符</p> <div class="language- extra-class"><pre class="language-text"><code>    // 拓展运算符 将数组分离为多项参数
+
+    console.log(Math.max(1, 2, 3))
+    let arr = [1, 2, 3, 4, 6, 8, 4, 9, 7]
+    console.log(Math.max(...arr))
+</code></pre></div><p>5.箭头函数</p> <div class="language- extra-class"><pre class="language-text"><code>    // 箭头函数
+    let fn = (a, b) =&gt; a + b
+    console.log(fn(1, 2))
+</code></pre></div><p>箭头函数没有this指向</p> <p>箭头函数不能使用new来实例化对象</p> <p>this指向：</p> <p>1.普通函数，this指向window</p> <p>2.谁调用指向谁</p> <p>3.call、apply、bind这三个方法将this指向绑定在传入的对象上</p> <p>4.new实例化后指向实例对象</p> <p>5.箭头函数 ，根据外层作用域来决定this</p> <p>call，apply，bind的区别？</p> <p>call和apply改变this指向，bind则是绑定this指向后返回新函数。</p> <p>call和apply立即执行，bind需要调用才执行。</p> <p>call如果传的多个参数，依次填，apply则是第二个参数是数组。</p> <div class="language- extra-class"><pre class="language-text"><code>    let boy = {
+        name: '小小',
+        fn() {
+            console.log(this.name)
+        },
+        like(a, b) {
+            console.log('喜欢' + a + '和' + b)
+        }
+    }
+
+    let man = {
+        name: '王大',
+    }
+    boy.fn()
+    boy.fn.call(man)
+    boy.like.call(man, '吃饭', '唱歌')
+    boy.like.apply(man, ['睡觉', '玩'])
+    let fn1 = boy.like.bind(man, '吃饭1', '唱歌1')
+</code></pre></div><p>6.解构赋值</p> <div class="language- extra-class"><pre class="language-text"><code>    // 解构赋值 赋值运算符的拓展
+    let man = {
+        name: '张三',
+        age: 18
+    }
+    let {
+        name,
+        age
+    } = man
+    console.log(name, age)
+    let arr = [1, 2, 3]
+    let [a, b, c] = arr
+    console.log(a, b, c)
+</code></pre></div><p>7.对象的方法</p> <div class="language- extra-class"><pre class="language-text"><code>    // 对象的方法
+
+    // 1.'is()'  等价于 '==='  比较两个值相等否
+    console.log(Object.is(NaN, NaN))
+
+
+    // 2. assign() 对象的合并
+    // Object.assign(obj, obj1, obj2) obj为目标对象
+
+    let obj = {}
+    let obj1 = {
+        name: '张三'
+    }
+    let obj2 = {
+        age: 18
+    }
+    Object.assign(obj, obj1, obj2)
+    console.log(obj)
+    console.log(obj1)
+    console.log(obj2)
+</code></pre></div><p>8.set和map</p> <div class="language- extra-class"><pre class="language-text"><code>    // Set  Set允许你存储任何类型的唯一值，无论是原始值或者是对象引用。
+    let arr = [1, 2, 2, 3, 5, 5, 6, 6, 7, 7, 7, 8]
+    let set = new Set(arr)
+    set.add(10)
+    set.delete(8)
+    console.log(set.has(10))
+    console.log(set)
+    let arr1 = [...set]
+    console.log(arr1)
+
+    // Set 是无重复值的有序列表,有点像数组。
+    // Map 是有序的键值对，其中的键允许是任何类型，有点像对象。
+
+    let map = new Map()
+    map.set('name', '张三')
+    console.log(map)
+</code></pre></div><h3 id="promise"><a href="#promise" class="header-anchor">#</a> Promise</h3> <p>Promise 是异步编程的一种解决方案</p> <p><code>Promise</code>对象是一个构造函数，用来生成<code>Promise</code>实例</p> <div class="language- extra-class"><pre class="language-text"><code>    // promise 
+    let pro = new Promise((res, rej) =&gt; {
+        let man = {
+            name: '张三',
+            age: '18'
+        }
+        res(man)
+    })
+    pro.then(res =&gt; {
+        // console.log(res)
+    })
+    // console.log(pro)
+    let pro1 = new Promise((res, rej) =&gt; {
+        res(1)
+    })
+    // console.log(pro1)
+    async function getdata() {
+        let a = await pro1
+        console.log(a)
+    }
+    getdata()
+</code></pre></div><p>10.class类</p> <div class="language- extra-class"><pre class="language-text"><code>    // es6 类与继承
+
+    class Cat {
+        constructor(name, age) {
+            this.name = name;
+            this.age = age
+        }
+    }
+    let cat = new Cat('大喵', 3)
+    Cat.prototype.like = function () {
+        console.log('猫喜欢睡觉')
+    }
+    cat.like()
+
+    class Dog extends Cat {
+        wang() {
+            console.log('旺旺')
+        }
+    }
+    let wc = new Dog('旺财',4)
+    console.log(wc)
+    wc.wang()
+
+	// 原型的继承
+	//有 A,B两个类，B要继承A，让B的prototype = A 的实例
+    B.prototype = new A()
+</code></pre></div><h3 id="http的状态码"><a href="#http的状态码" class="header-anchor">#</a> http的状态码</h3> <p>1XX：信息状态码</p> <p>2XX：成功状态码</p> <p>3XX：重定向</p> <p>4XX：客户端错误</p> <p>5XX：服务器错误</p> <p>常见状态码：</p> <p>304 自从上次请求后，请求的网页未修改过。</p> <p>401 没有权限，请求要求身份验证。</p> <p>403 服务器已经理解请求，但是拒绝执行它。</p> <p>404 请求失败</p> <p>500 服务器遇到一个未曾预料的情况，导致无法完成对请求的处理</p> <p>503 由于请示服务器维护或者过载，服务器当前无法处理请求</p> <h3 id="get与post的区别"><a href="#get与post的区别" class="header-anchor">#</a> get与post的区别</h3> <p>GET在浏览器回退时是无害的，而POST会再次提交请求</p> <p>GET产生的URL地址可被Bookmark，而POST不可以</p> <p>GET请求会被浏览器主动cache缓存，而POST不会，除非手动设置</p> <p>GET请求只能进行url编码，而POST支持多种编码方式。</p> <p>GET请求参数会被完整的保留在浏览器历史记录中，而POST中的参数不会被保留</p> <p>GET请求在URL中传送的参数是有长度限制的，而POST没有</p> <p>对参数的数据类型，GET只接受ASCII字符，而POST没有限制</p> <p>GET比POST更不安全，因为参数直接暴露在URL上，所以不能用来传递敏感信息</p> <p>GET参数通过URL传递，POST放在Request body中</p> <h3 id="ajax的过程"><a href="#ajax的过程" class="header-anchor">#</a> ajax的过程</h3> <div class="language- extra-class"><pre class="language-text"><code>    // 1.创建xhr对象
+    var xhr = new XMLHttpRequest()
+    // 2.设置请求方式
+    xhr.open('method', URL, async);
+    // 3.设置回调函数
+    xhr.onreadystatechange = () =&gt; {
+        if (xhr.readyState !== 4) return
+        if ((xhr.status &gt;= 200 &amp;&amp; xhr.status &lt; 300) || xhr.status == 304) {
+            console.log(111)
+        } else {
+            console.log(000)
+        }
+    }
+    // 4.发送请求
+    xhr.send()
+    // 5.结果处理
+</code></pre></div></div> <footer class="page-edit"><!----> <!----></footer> <!----> </main></div><div class="global-ui"></div></div>
+    <script src="/vuepress/assets/js/app.7a2a8262.js" defer></script><script src="/vuepress/assets/js/2.91b52501.js" defer></script><script src="/vuepress/assets/js/16.6bc2ff7b.js" defer></script>
+  </body>
+</html>

@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>uniapp支付功能</title>
+    <meta name="generator" content="VuePress 1.9.7">
+    
+    <meta name="description" content="">
+    
+    <link rel="preload" href="/vuepress/assets/css/0.styles.c72aa0eb.css" as="style"><link rel="preload" href="/vuepress/assets/js/app.7a2a8262.js" as="script"><link rel="preload" href="/vuepress/assets/js/2.91b52501.js" as="script"><link rel="preload" href="/vuepress/assets/js/35.d9f6fcf6.js" as="script"><link rel="prefetch" href="/vuepress/assets/js/10.f38cb28a.js"><link rel="prefetch" href="/vuepress/assets/js/11.01629209.js"><link rel="prefetch" href="/vuepress/assets/js/12.6169357e.js"><link rel="prefetch" href="/vuepress/assets/js/13.50509f65.js"><link rel="prefetch" href="/vuepress/assets/js/14.dc219a31.js"><link rel="prefetch" href="/vuepress/assets/js/15.54e254cb.js"><link rel="prefetch" href="/vuepress/assets/js/16.6bc2ff7b.js"><link rel="prefetch" href="/vuepress/assets/js/17.1a8ab1b2.js"><link rel="prefetch" href="/vuepress/assets/js/18.26383fff.js"><link rel="prefetch" href="/vuepress/assets/js/19.7dd05a8c.js"><link rel="prefetch" href="/vuepress/assets/js/20.ccabacbd.js"><link rel="prefetch" href="/vuepress/assets/js/21.36694dac.js"><link rel="prefetch" href="/vuepress/assets/js/22.ecf6e3fc.js"><link rel="prefetch" href="/vuepress/assets/js/23.806b4dad.js"><link rel="prefetch" href="/vuepress/assets/js/24.b15980f8.js"><link rel="prefetch" href="/vuepress/assets/js/25.7af17b9e.js"><link rel="prefetch" href="/vuepress/assets/js/26.aa5bd175.js"><link rel="prefetch" href="/vuepress/assets/js/27.29d233f2.js"><link rel="prefetch" href="/vuepress/assets/js/28.db118063.js"><link rel="prefetch" href="/vuepress/assets/js/29.f42dc648.js"><link rel="prefetch" href="/vuepress/assets/js/3.c120149f.js"><link rel="prefetch" href="/vuepress/assets/js/30.a688960a.js"><link rel="prefetch" href="/vuepress/assets/js/31.54c6c164.js"><link rel="prefetch" href="/vuepress/assets/js/32.3cd371ac.js"><link rel="prefetch" href="/vuepress/assets/js/33.2e7a9de0.js"><link rel="prefetch" href="/vuepress/assets/js/34.2b96fa49.js"><link rel="prefetch" href="/vuepress/assets/js/36.43750f97.js"><link rel="prefetch" href="/vuepress/assets/js/37.3f3a61ae.js"><link rel="prefetch" href="/vuepress/assets/js/38.6ed22093.js"><link rel="prefetch" href="/vuepress/assets/js/4.0efb1a05.js"><link rel="prefetch" href="/vuepress/assets/js/5.85b96d4f.js"><link rel="prefetch" href="/vuepress/assets/js/6.863f2ac0.js"><link rel="prefetch" href="/vuepress/assets/js/7.10f8bc48.js"><link rel="prefetch" href="/vuepress/assets/js/8.d9f0a0d3.js"><link rel="prefetch" href="/vuepress/assets/js/9.d22c41c6.js">
+    <link rel="stylesheet" href="/vuepress/assets/css/0.styles.c72aa0eb.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/vuepress/" class="home-link router-link-active"><img src="https://www.vuepress.cn/hero.png" alt="" class="logo"> <!----></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/vuepress/" class="nav-link">
+  Home
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="前端基础" class="dropdown-title"><span class="title">前端基础</span> <span class="arrow down"></span></button> <button type="button" aria-label="前端基础" class="mobile-dropdown-title"><span class="title">前端基础</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><h4>
+          环境相关
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/vuepress/views/basis/nvm安装node.html" class="nav-link">
+  nvm安装
+</a></li><li class="dropdown-subitem"><a href="/vuepress/views/basis/git使用.html" class="nav-link">
+  git使用
+</a></li><li class="dropdown-subitem"><a href="/vuepress/views/basis/vscode拓展.html" class="nav-link">
+  vscode拓展和设置
+</a></li></ul></li><li class="dropdown-item"><h4>
+          前端三大件
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="https://www.w3school.com.cn/html/index.asp" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  HTML
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li><li class="dropdown-subitem"><a href="https://www.w3school.com.cn/css/index.asp" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  CSS
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li><li class="dropdown-subitem"><a href="https://www.w3school.com.cn/js/index.asp" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  JavaScript
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li><li class="dropdown-subitem"><a href="/vuepress/views/basis/js基础.html" class="nav-link">
+  js一些方法
+</a></li></ul></li><li class="dropdown-item"><h4>
+          jQuery
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="https://www.w3school.com.cn/jquery/index.asp" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  w3教程
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li><li class="dropdown-subitem"><a href="http://hemin.cn/jq/" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  在线手册
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li><li class="dropdown-subitem"><a href="/vuepress/views/basis/task1.html" class="nav-link">
+  案例1
+</a></li><li class="dropdown-subitem"><a href="/vuepress/views/basis/task2.html" class="nav-link">
+  案例2
+</a></li></ul></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="服务端" class="dropdown-title"><span class="title">服务端</span> <span class="arrow down"></span></button> <button type="button" aria-label="服务端" class="mobile-dropdown-title"><span class="title">服务端</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><h4>
+          nodejs
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/vuepress/views/server/nodejs1.html" class="nav-link">
+  nodejs学习
+</a></li><li class="dropdown-subitem"><a href="/vuepress/views/server/nodejs2.html" class="nav-link">
+  nodejs服务端
+</a></li><li class="dropdown-subitem"><a href="/vuepress/views/server/express1.html" class="nav-link">
+  express1
+</a></li><li class="dropdown-subitem"><a href="/vuepress/views/server/express2.html" class="nav-link">
+  express2
+</a></li><li class="dropdown-subitem"><a href="/vuepress/views/server/sql.html" class="nav-link">
+  SQL
+</a></li><li class="dropdown-subitem"><a href="/vuepress/views/server/websocket基本使用.html" class="nav-link">
+  websocket基本使用
+</a></li></ul></li><li class="dropdown-item"><h4>
+          Linux相关
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/vuepress/views/server/Linux常用命令.html" class="nav-link">
+  Linux常用命令
+</a></li><li class="dropdown-subitem"><a href="/vuepress/views/server/LINUX安装nginx.html" class="nav-link">
+  Linux安装nginx
+</a></li></ul></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="vue" class="dropdown-title"><span class="title">vue</span> <span class="arrow down"></span></button> <button type="button" aria-label="vue" class="mobile-dropdown-title"><span class="title">vue</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="https://cn.vuejs.org/" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  vue官网
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li><li class="dropdown-item"><h4>
+          vue3
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/vuepress/views/vue/vue3基础.html" class="nav-link">
+  vue3基础
+</a></li><li class="dropdown-subitem"><a href="/vuepress/views/vue/vue3项目.html" class="nav-link">
+  vue3项目
+</a></li></ul></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="微信小程序" class="dropdown-title"><span class="title">微信小程序</span> <span class="arrow down"></span></button> <button type="button" aria-label="微信小程序" class="mobile-dropdown-title"><span class="title">微信小程序</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="https://developers.weixin.qq.com/miniprogram/dev/framework/" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  小程序官方文档
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li><li class="dropdown-item"><h4>
+          item
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/vuepress/2.html" class="nav-link">
+  2
+</a></li><li class="dropdown-subitem"><a href="/vuepress/3.html" class="nav-link">
+  3
+</a></li></ul></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="uni-app" class="dropdown-title"><span class="title">uni-app</span> <span class="arrow down"></span></button> <button type="button" aria-label="uni-app" class="mobile-dropdown-title"><span class="title">uni-app</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="https://uniapp.dcloud.net.cn/" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  uni-app官网
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li><li class="dropdown-item"><!----> <a href="/vuepress/views/uniapp/uniapp基础.html" class="nav-link">
+  uniapp基础
+</a></li><li class="dropdown-item"><!----> <a href="/vuepress/views/uniapp/uniapp支付功能.html" class="nav-link">
+  支付功能
+</a></li><li class="dropdown-item"><!----> <a href="/vuepress/views/uniapp/request封装.html" class="nav-link">
+  request封装
+</a></li><li class="dropdown-item"><!----> <a href="/vuepress/views/uniapp/uniapp开发总结.html" class="nav-link">
+  开发总结
+</a></li><li class="dropdown-item"><!----> <a href="/vuepress/views/uniapp/components.html" class="nav-link">
+  自定义组件
+</a></li><li class="dropdown-item"><!----> <a href="/vuepress/views/uniapp/uniapp插件.html" class="nav-link">
+  插件
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="React" class="dropdown-title"><span class="title">React</span> <span class="arrow down"></span></button> <button type="button" aria-label="React" class="mobile-dropdown-title"><span class="title">React</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="https://react.docschina.org/" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  React官网
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li><li class="dropdown-item"><h4>
+          item
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/vuepress/2.html" class="nav-link">
+  2
+</a></li><li class="dropdown-subitem"><a href="/vuepress/3.html" class="nav-link">
+  3
+</a></li></ul></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="前端面试题" class="dropdown-title"><span class="title">前端面试题</span> <span class="arrow down"></span></button> <button type="button" aria-label="前端面试题" class="mobile-dropdown-title"><span class="title">前端面试题</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/vuepress/views/question/前端面试题整合.html" class="nav-link">
+  面试题2020
+</a></li><li class="dropdown-item"><!----> <a href="/vuepress/views/question/字节面试题.html" class="nav-link">
+  字节面试题
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="link" class="dropdown-title"><span class="title">link</span> <span class="arrow down"></span></button> <button type="button" aria-label="link" class="mobile-dropdown-title"><span class="title">link</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="http://caibaojian.com/vuepress/" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  vuepress
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li><li class="dropdown-item"><!----> <a href="https://gitee.com/feng644586334/vuepress" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  本项目地址
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li></ul></div></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/vuepress/" class="nav-link">
+  Home
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="前端基础" class="dropdown-title"><span class="title">前端基础</span> <span class="arrow down"></span></button> <button type="button" aria-label="前端基础" class="mobile-dropdown-title"><span class="title">前端基础</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><h4>
+          环境相关
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/vuepress/views/basis/nvm安装node.html" class="nav-link">
+  nvm安装
+</a></li><li class="dropdown-subitem"><a href="/vuepress/views/basis/git使用.html" class="nav-link">
+  git使用
+</a></li><li class="dropdown-subitem"><a href="/vuepress/views/basis/vscode拓展.html" class="nav-link">
+  vscode拓展和设置
+</a></li></ul></li><li class="dropdown-item"><h4>
+          前端三大件
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="https://www.w3school.com.cn/html/index.asp" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  HTML
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li><li class="dropdown-subitem"><a href="https://www.w3school.com.cn/css/index.asp" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  CSS
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li><li class="dropdown-subitem"><a href="https://www.w3school.com.cn/js/index.asp" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  JavaScript
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li><li class="dropdown-subitem"><a href="/vuepress/views/basis/js基础.html" class="nav-link">
+  js一些方法
+</a></li></ul></li><li class="dropdown-item"><h4>
+          jQuery
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="https://www.w3school.com.cn/jquery/index.asp" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  w3教程
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li><li class="dropdown-subitem"><a href="http://hemin.cn/jq/" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  在线手册
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li><li class="dropdown-subitem"><a href="/vuepress/views/basis/task1.html" class="nav-link">
+  案例1
+</a></li><li class="dropdown-subitem"><a href="/vuepress/views/basis/task2.html" class="nav-link">
+  案例2
+</a></li></ul></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="服务端" class="dropdown-title"><span class="title">服务端</span> <span class="arrow down"></span></button> <button type="button" aria-label="服务端" class="mobile-dropdown-title"><span class="title">服务端</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><h4>
+          nodejs
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/vuepress/views/server/nodejs1.html" class="nav-link">
+  nodejs学习
+</a></li><li class="dropdown-subitem"><a href="/vuepress/views/server/nodejs2.html" class="nav-link">
+  nodejs服务端
+</a></li><li class="dropdown-subitem"><a href="/vuepress/views/server/express1.html" class="nav-link">
+  express1
+</a></li><li class="dropdown-subitem"><a href="/vuepress/views/server/express2.html" class="nav-link">
+  express2
+</a></li><li class="dropdown-subitem"><a href="/vuepress/views/server/sql.html" class="nav-link">
+  SQL
+</a></li><li class="dropdown-subitem"><a href="/vuepress/views/server/websocket基本使用.html" class="nav-link">
+  websocket基本使用
+</a></li></ul></li><li class="dropdown-item"><h4>
+          Linux相关
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/vuepress/views/server/Linux常用命令.html" class="nav-link">
+  Linux常用命令
+</a></li><li class="dropdown-subitem"><a href="/vuepress/views/server/LINUX安装nginx.html" class="nav-link">
+  Linux安装nginx
+</a></li></ul></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="vue" class="dropdown-title"><span class="title">vue</span> <span class="arrow down"></span></button> <button type="button" aria-label="vue" class="mobile-dropdown-title"><span class="title">vue</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="https://cn.vuejs.org/" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  vue官网
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li><li class="dropdown-item"><h4>
+          vue3
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/vuepress/views/vue/vue3基础.html" class="nav-link">
+  vue3基础
+</a></li><li class="dropdown-subitem"><a href="/vuepress/views/vue/vue3项目.html" class="nav-link">
+  vue3项目
+</a></li></ul></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="微信小程序" class="dropdown-title"><span class="title">微信小程序</span> <span class="arrow down"></span></button> <button type="button" aria-label="微信小程序" class="mobile-dropdown-title"><span class="title">微信小程序</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="https://developers.weixin.qq.com/miniprogram/dev/framework/" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  小程序官方文档
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li><li class="dropdown-item"><h4>
+          item
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/vuepress/2.html" class="nav-link">
+  2
+</a></li><li class="dropdown-subitem"><a href="/vuepress/3.html" class="nav-link">
+  3
+</a></li></ul></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="uni-app" class="dropdown-title"><span class="title">uni-app</span> <span class="arrow down"></span></button> <button type="button" aria-label="uni-app" class="mobile-dropdown-title"><span class="title">uni-app</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="https://uniapp.dcloud.net.cn/" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  uni-app官网
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li><li class="dropdown-item"><!----> <a href="/vuepress/views/uniapp/uniapp基础.html" class="nav-link">
+  uniapp基础
+</a></li><li class="dropdown-item"><!----> <a href="/vuepress/views/uniapp/uniapp支付功能.html" class="nav-link">
+  支付功能
+</a></li><li class="dropdown-item"><!----> <a href="/vuepress/views/uniapp/request封装.html" class="nav-link">
+  request封装
+</a></li><li class="dropdown-item"><!----> <a href="/vuepress/views/uniapp/uniapp开发总结.html" class="nav-link">
+  开发总结
+</a></li><li class="dropdown-item"><!----> <a href="/vuepress/views/uniapp/components.html" class="nav-link">
+  自定义组件
+</a></li><li class="dropdown-item"><!----> <a href="/vuepress/views/uniapp/uniapp插件.html" class="nav-link">
+  插件
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="React" class="dropdown-title"><span class="title">React</span> <span class="arrow down"></span></button> <button type="button" aria-label="React" class="mobile-dropdown-title"><span class="title">React</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="https://react.docschina.org/" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  React官网
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li><li class="dropdown-item"><h4>
+          item
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/vuepress/2.html" class="nav-link">
+  2
+</a></li><li class="dropdown-subitem"><a href="/vuepress/3.html" class="nav-link">
+  3
+</a></li></ul></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="前端面试题" class="dropdown-title"><span class="title">前端面试题</span> <span class="arrow down"></span></button> <button type="button" aria-label="前端面试题" class="mobile-dropdown-title"><span class="title">前端面试题</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/vuepress/views/question/前端面试题整合.html" class="nav-link">
+  面试题2020
+</a></li><li class="dropdown-item"><!----> <a href="/vuepress/views/question/字节面试题.html" class="nav-link">
+  字节面试题
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="link" class="dropdown-title"><span class="title">link</span> <span class="arrow down"></span></button> <button type="button" aria-label="link" class="mobile-dropdown-title"><span class="title">link</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="http://caibaojian.com/vuepress/" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  vuepress
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li><li class="dropdown-item"><!----> <a href="https://gitee.com/feng644586334/vuepress" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  本项目地址
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li></ul></div></div> <!----></nav>  <ul class="sidebar-links"><li><section class="sidebar-group depth-0"><p class="sidebar-heading open"><span>uniapp支付功能</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/vuepress/views/uniapp/uniapp%E6%94%AF%E4%BB%98%E5%8A%9F%E8%83%BD.html#一-微信小程序中支付" class="sidebar-link">一.微信小程序中支付</a><ul class="sidebar-sub-headers"></ul></li><li><a href="/vuepress/views/uniapp/uniapp%E6%94%AF%E4%BB%98%E5%8A%9F%E8%83%BD.html#二-app中微信支付" class="sidebar-link">二.app中微信支付</a><ul class="sidebar-sub-headers"></ul></li><li><a href="/vuepress/views/uniapp/uniapp%E6%94%AF%E4%BB%98%E5%8A%9F%E8%83%BD.html#三-app中支付宝支付" class="sidebar-link">三.app中支付宝支付</a><ul class="sidebar-sub-headers"></ul></li><li><a href="/vuepress/views/uniapp/uniapp%E6%94%AF%E4%BB%98%E5%8A%9F%E8%83%BD.html#四-h5中微信支付" class="sidebar-link">四.h5中微信支付</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/vuepress/views/uniapp/uniapp%E6%94%AF%E4%BB%98%E5%8A%9F%E8%83%BD.html#微信支付" class="sidebar-link">微信支付</a></li></ul></li></ul></section></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="uniapp支付功能"><a href="#uniapp支付功能" class="header-anchor">#</a> uniapp支付功能</h1> <p>uni.requestPayment()</p> <p>https://uniapp.dcloud.net.cn/api/plugins/payment.html#h5-payment</p> <h2 id="一-微信小程序中支付"><a href="#一-微信小程序中支付" class="header-anchor">#</a> 一.微信小程序中支付</h2> <p>1.登录</p> <p>2.获取openid</p> <p>3.创建订单，获取支付信息</p> <p>4.发起支付</p> <div class="language-js extra-class"><pre class="language-js"><code><span class="token comment">// 仅作为示例，非真实参数信息。</span>
+uni<span class="token punctuation">.</span><span class="token function">requestPayment</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
+    <span class="token literal-property property">provider</span><span class="token operator">:</span> <span class="token string">'wxpay'</span><span class="token punctuation">,</span> <span class="token comment">// 服务商</span>
+	<span class="token literal-property property">timeStamp</span><span class="token operator">:</span> <span class="token function">String</span><span class="token punctuation">(</span>Date<span class="token punctuation">.</span><span class="token function">now</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">,</span>  <span class="token comment">// 时间戳</span>
+	<span class="token literal-property property">nonceStr</span><span class="token operator">:</span> <span class="token string">'A1B2C3D4E5'</span><span class="token punctuation">,</span> <span class="token comment">// 随机字符串</span>
+	<span class="token keyword">package</span><span class="token operator">:</span> <span class="token string">'prepay_id=wx20180101abcdefg'</span><span class="token punctuation">,</span> <span class="token comment">// 统一订单号</span>
+	<span class="token literal-property property">signType</span><span class="token operator">:</span> <span class="token string">'MD5'</span><span class="token punctuation">,</span> <span class="token comment">// 签名算法</span>
+	<span class="token literal-property property">paySign</span><span class="token operator">:</span> <span class="token string">''</span><span class="token punctuation">,</span> <span class="token comment">// 签名</span>
+	<span class="token function-variable function">success</span><span class="token operator">:</span> <span class="token keyword">function</span> <span class="token punctuation">(</span><span class="token parameter">res</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+		console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">'success:'</span> <span class="token operator">+</span> <span class="token constant">JSON</span><span class="token punctuation">.</span><span class="token function">stringify</span><span class="token punctuation">(</span>res<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+	<span class="token punctuation">}</span><span class="token punctuation">,</span>
+	<span class="token function-variable function">fail</span><span class="token operator">:</span> <span class="token keyword">function</span> <span class="token punctuation">(</span><span class="token parameter">err</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+		console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">'fail:'</span> <span class="token operator">+</span> <span class="token constant">JSON</span><span class="token punctuation">.</span><span class="token function">stringify</span><span class="token punctuation">(</span>err<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+	<span class="token punctuation">}</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+</code></pre></div><h2 id="二-app中微信支付"><a href="#二-app中微信支付" class="header-anchor">#</a> 二.app中微信支付</h2> <p>1.登录</p> <p>2.获取openid</p> <p>3.创建订单，获取支付信息</p> <p>4.发起支付</p> <div class="language-js extra-class"><pre class="language-js"><code>uni<span class="token punctuation">.</span><span class="token function">requestPayment</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
+    <span class="token string-property property">&quot;provider&quot;</span><span class="token operator">:</span> <span class="token string">&quot;wxpay&quot;</span><span class="token punctuation">,</span>  <span class="token comment">// 服务商</span>
+    <span class="token string-property property">&quot;orderInfo&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+        <span class="token string-property property">&quot;appid&quot;</span><span class="token operator">:</span> <span class="token string">&quot;wx499********7c70e&quot;</span><span class="token punctuation">,</span>  <span class="token comment">// 微信开放平台 - 应用 - AppId，注意和微信小程序、公众号 AppId 可能不一致</span>
+        <span class="token string-property property">&quot;noncestr&quot;</span><span class="token operator">:</span> <span class="token string">&quot;c5sEwbaNPiXAF3iv&quot;</span><span class="token punctuation">,</span> <span class="token comment">// 随机字符串</span>
+        <span class="token string-property property">&quot;package&quot;</span><span class="token operator">:</span> <span class="token string">&quot;Sign=WXPay&quot;</span><span class="token punctuation">,</span>        <span class="token comment">// 固定值</span>
+        <span class="token string-property property">&quot;partnerid&quot;</span><span class="token operator">:</span> <span class="token string">&quot;148*****52&quot;</span><span class="token punctuation">,</span>      <span class="token comment">// 微信支付商户号</span>
+        <span class="token string-property property">&quot;prepayid&quot;</span><span class="token operator">:</span> <span class="token string">&quot;wx202254********************fbe90000&quot;</span><span class="token punctuation">,</span> <span class="token comment">// 统一下单订单号 </span>
+        <span class="token string-property property">&quot;timestamp&quot;</span><span class="token operator">:</span> <span class="token number">1597935292</span><span class="token punctuation">,</span>        <span class="token comment">// 时间戳（单位：秒）</span>
+        <span class="token string-property property">&quot;sign&quot;</span><span class="token operator">:</span> <span class="token string">&quot;A842B45937F6EFF60DEC7A2EAA52D5A0&quot;</span> <span class="token comment">// 签名，这里用的 MD5/RSA 签名</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    <span class="token function">success</span><span class="token punctuation">(</span><span class="token parameter">res</span><span class="token punctuation">)</span> <span class="token punctuation">{</span><span class="token punctuation">}</span><span class="token punctuation">,</span>
+    <span class="token function">fail</span><span class="token punctuation">(</span><span class="token parameter">e</span><span class="token punctuation">)</span> <span class="token punctuation">{</span><span class="token punctuation">}</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span>
+
+</code></pre></div><h2 id="三-app中支付宝支付"><a href="#三-app中支付宝支付" class="header-anchor">#</a> 三.app中支付宝支付</h2> <p>1.创建订单，获取支付信息</p> <p>2.发起支付</p> <div class="language-js extra-class"><pre class="language-js"><code>uni<span class="token punctuation">.</span><span class="token function">requestPayment</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
+    <span class="token literal-property property">provider</span><span class="token operator">:</span> <span class="token string">'alipay'</span><span class="token punctuation">,</span>  <span class="token comment">// 服务商</span>
+    <span class="token literal-property property">orderInfo</span><span class="token operator">:</span> <span class="token string">'orderInfo'</span><span class="token punctuation">,</span> <span class="token comment">// 订单数据</span>
+    <span class="token function-variable function">success</span><span class="token operator">:</span> <span class="token keyword">function</span> <span class="token punctuation">(</span><span class="token parameter">res</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">'success:'</span> <span class="token operator">+</span> <span class="token constant">JSON</span><span class="token punctuation">.</span><span class="token function">stringify</span><span class="token punctuation">(</span>res<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    <span class="token function-variable function">fail</span><span class="token operator">:</span> <span class="token keyword">function</span> <span class="token punctuation">(</span><span class="token parameter">err</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">'fail:'</span> <span class="token operator">+</span> <span class="token constant">JSON</span><span class="token punctuation">.</span><span class="token function">stringify</span><span class="token punctuation">(</span>err<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+</code></pre></div><h2 id="四-h5中微信支付"><a href="#四-h5中微信支付" class="header-anchor">#</a> 四.h5中微信支付</h2> <p>微信内嵌浏览器运行H5版时，可通过js sdk实现微信支付</p> <p>JSSDK 的使用方式</p> <p>https://ask.dcloud.net.cn/article/35380</p> <p>JS-SDK说明文档</p> <p>https://developers.weixin.qq.com/doc/offiaccount/OA_Web_Apps/JS-SDK.html</p> <h3 id="微信支付"><a href="#微信支付" class="header-anchor">#</a> 微信支付</h3> <p>发起一个微信支付请求</p> <div class="language-js extra-class"><pre class="language-js"><code>wx<span class="token punctuation">.</span><span class="token function">chooseWXPay</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
+  <span class="token literal-property property">timestamp</span><span class="token operator">:</span> <span class="token number">0</span><span class="token punctuation">,</span> <span class="token comment">// 支付签名时间戳，注意微信jssdk中的所有使用timestamp字段均为小写。但最新版的支付后台生成签名使用的timeStamp字段名需大写其中的S字符</span>
+  <span class="token literal-property property">nonceStr</span><span class="token operator">:</span> <span class="token string">''</span><span class="token punctuation">,</span> <span class="token comment">// 支付签名随机串，不长于 32 位</span>
+  <span class="token keyword">package</span><span class="token operator">:</span> <span class="token string">''</span><span class="token punctuation">,</span> <span class="token comment">// 统一支付接口返回的prepay_id参数值，提交格式如：prepay_id=\*\*\*）</span>
+  <span class="token literal-property property">signType</span><span class="token operator">:</span> <span class="token string">''</span><span class="token punctuation">,</span> <span class="token comment">// 微信支付V3的传入RSA,微信支付V2的传入格式与V2统一下单的签名格式保持一致</span>
+  <span class="token literal-property property">paySign</span><span class="token operator">:</span> <span class="token string">''</span><span class="token punctuation">,</span> <span class="token comment">// 支付签名</span>
+  <span class="token function-variable function">success</span><span class="token operator">:</span> <span class="token keyword">function</span> <span class="token punctuation">(</span><span class="token parameter">res</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token comment">// 支付成功后的回调函数</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre></div><p>备注：prepay_id 通过微信支付统一下单接口拿到，paySign 采用统一的微信支付 Sign 签名生成方法，注意这里 appId 也要参与签名，appId 与 config 中传入的 appId 一致，签名格式要求以微信支付文档为准。</p> <p>微信支付V2的开发文档：https://pay.weixin.qq.com/wiki/doc/api/index.html</p> <p>微信支付V3的开发文档：https://pay.weixin.qq.com/wiki/doc/apiv3/index.shtml</p></div> <footer class="page-edit"><!----> <!----></footer> <!----> </main></div><div class="global-ui"></div></div>
+    <script src="/vuepress/assets/js/app.7a2a8262.js" defer></script><script src="/vuepress/assets/js/2.91b52501.js" defer></script><script src="/vuepress/assets/js/35.d9f6fcf6.js" defer></script>
+  </body>
+</html>
