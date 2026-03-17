@@ -2,7 +2,8 @@
 
 [build]
 publish = "docs/.vuepress/dist"
-command = "pnpm install --no-frozen-lockfile && pnpm run docs:build"
+command = "pnpm run docs:build"
 
 [build.environment]
 NODE_VERSION = "20"
+NPM_FLAGS = "--version"
