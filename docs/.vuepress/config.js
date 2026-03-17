@@ -1,178 +1,94 @@
-// .vuepress/config.js
-module.exports = {
-  base: "/vuepress/",
-  // base:'./',
-  dest: "./dist",
-  themeConfig: {
-    logo: "https://www.vuepress.cn/hero.png",
-    nav: [
-      { text: "Home", link: "/" },
-      {
-        text: "前端基础",
-        items: [
-          {
-            text: "环境相关",
-            items: [
-              { text: "nvm安装", link: "/views/basis/nvm安装node" },
-              { text: "git使用", link: "/views/basis/git使用" },
-              { text: "vscode拓展和设置", link: "/views/basis/vscode拓展" },
-            ],
-          },
-          {
-            text: "前端三大件",
-            items: [
-              {
-                text: "HTML",
-                link: "https://www.w3school.com.cn/html/index.asp",
-              },
-              {
-                text: "CSS",
-                link: "https://www.w3school.com.cn/css/index.asp",
-              },
-              {
-                text: "JavaScript",
-                link: "https://www.w3school.com.cn/js/index.asp",
-              },
-              { text: "js一些方法", link: "/views/basis/js基础" },
-            ],
-          },
-          {
-            text: "jQuery",
-            items: [
-              {
-                text: "w3教程",
-                link: "https://www.w3school.com.cn/jquery/index.asp",
-              },
-              { text: "在线手册", link: "http://hemin.cn/jq/" },
-              { text: "案例1", link: "/views/basis/task1" },
-              { text: "案例2", link: "/views/basis/task2" },
-            ],
-          },
-        ],
+import { viteBundler } from '@vuepress/bundler-vite'
+import { defineUserConfig } from 'vuepress'
+import { plumeTheme } from 'vuepress-theme-plume'
+
+export default defineUserConfig({
+  base: '/',
+  lang: 'zh-CN',
+  title: 'Asuka',
+  description: 'Asuka',
+  head: [
+    ['link', { rel: 'icon', href: '/images/asuka.png' }]
+  ],
+  bundler: viteBundler(),
+
+  theme: plumeTheme({
+    blog: {
+      excerpt: false,
+      postCover: {
+        layout: 'top',
+        // ratio: '16:9',
+        compact: true,
       },
-      {
-        text: "服务端",
-        items: [
-          {
-            text: "nodejs",
-            items: [
-              { text: "nodejs学习", link: "/views/server/nodejs1" },
-              { text: "nodejs服务端", link: "/views/server/nodejs2" },
-              { text: "express1", link: "/views/server/express1" },
-              { text: "express2", link: "/views/server/express2" },
-              { text: "SQL", link: "/views/server/sql" },
-              {
-                text: "websocket基本使用",
-                link: "/views/server/websocket基本使用",
-              },
-            ],
-          },
-          {
-            text: "Linux相关",
-            items: [
-              { text: "Linux常用命令", link: "/views/server/Linux常用命令" },
-              { text: "Linux安装nginx", link: "/views/server/LINUX安装nginx" },
-            ],
-          },
-        ],
+    },
+    // 添加您的部署域名
+    // hostname: 'https://your_site_url',
+    // your git repo url
+    docsRepo: '',
+    docsDir: 'docs',
+    footer: false,
+    contributors: false,
+    plugins: {
+      /**
+       * Shiki 代码高亮
+       * @see https://theme-plume.vuejs.press/config/plugins/code-highlight/
+       */
+      shiki: {
+        // 强烈建议预设代码块高亮语言，插件默认加载所有语言会产生不必要的时间开销
+        //  ["js","html","css","ts","haskell"]
+        languages: ['shell', 'bash', 'typescript', 'javascript', 'js', 'html', 'css'],
       },
-      {
-        text: "vue",
-        items: [
-          { text: "vue官网", link: "https://cn.vuejs.org/" },
-          {
-            text: "vue3",
-            items: [
-              { text: "vue3基础", link: "/views/vue/vue3基础" },
-              { text: "vue3项目", link: "/views/vue/vue3项目" },
-            ],
-          },
-        ],
+
+      /**
+       * markdown enhance
+       * @see https://theme-plume.vuejs.press/config/plugins/markdown-enhance/
+       */
+      markdownEnhance: {
+        demo: true,
+        //   include: true,
+        //   chart: true,
+        //   echarts: true,
+        //   mermaid: true,
+        //   flowchart: true,
       },
-      {
-        text: "微信小程序",
-        items: [
-          {
-            text: "小程序官方文档",
-            link: "https://developers.weixin.qq.com/miniprogram/dev/framework/",
-          },
-          {
-            text: "item",
-            items: [
-              { text: "2", link: "/2" },
-              { text: "3", link: "/3" },
-            ],
-          },
-        ],
+
+      /**
+       *  markdown power
+       * @see https://theme-plume.vuejs.press/config/plugin/markdown-power/
+       */
+      markdownPower: {
+        // pdf: true,
+        caniuse: true,
+        plot: true,
+        // bilibili: true,
+        // youtube: true,
+        icons: true,
+        codepen: true,
+        replit: true,
+        codeSandbox: true,
+        // jsfiddle: true,
+        // repl: {
+        //   go: true,
+        //   rust: true,
+        //   kotlin: true,
+        // },
       },
-      {
-        text: "uni-app",
-        items: [
-          { text: "uni-app官网", link: "https://uniapp.dcloud.net.cn/" },
-          { text: "uniapp基础", link: "/views/uniapp/uniapp基础" },
-          { text: "支付功能", link: "/views/uniapp/uniapp支付功能" },
-          { text: "request封装", link: "/views/uniapp/request封装" },
-          { text: "开发总结", link: "/views/uniapp/uniapp开发总结" },
-          { text: "自定义组件", link: "/views/uniapp/components" },
-          { text: "插件", link: "/views/uniapp/uniapp插件" },
-        ],
-      },
-      {
-        text: "React",
-        items: [
-          { text: "React官网", link: "https://react.docschina.org/" },
-          {
-            text: "item",
-            items: [
-              { text: "2", link: "/2" },
-              { text: "3", link: "/3" },
-            ],
-          },
-        ],
-      },
-      {
-        text: "前端面试题",
-        items: [
-          { text: "面试题2020", link: "/views/question/前端面试题整合" },
-          {
-            text: "字节面试题",
-            link: "/views/question/字节面试题",
-          },
-        ],
-      },
-      {
-        text: "link",
-        items: [
-          { text: "vuepress", link: "http://caibaojian.com/vuepress/" },
-          {
-            text: "本项目地址",
-            link: "https://gitee.com/feng644586334/vuepress",
-          },
-        ],
-      },
-    ],
-    // sidebar: [
-    //     {
-    //         title: 'Group 1',   // 必要的
-    //         path: '/1',      // 可选的, 标题的跳转链接，应为绝对路径且必须存在
-    //         collapsable: false, // 可选的, 默认值是 true,
-    //         sidebarDepth: 1,    // 可选的, 默认值是 1
-    //         children: [
-    //             {
-    //                 title: '一啊',
-    //                 path: '/1',
-    //             },
-    //             {
-    //                 title: '二啊',
-    //                 path: '/2',
-    //             },
-    //         ]
-    //     },
-    //     {
-    //         title: 'Group 2',
-    //         children: [ /* ... */],
-    //         initialOpenGroupIndex: -1 // 可选的, 默认值是 0
-    //     }
-    // ]
-  },
-};
+
+      /**
+       * 评论 comments
+       * @see https://theme-plume.vuejs.press/guide/features/comments/
+       */
+      // comment: {
+      //   provider: '', // "Artalk" | "Giscus" | "Twikoo" | "Waline"
+      //   comment: true,
+      //   repo: '',
+      //   repoId: '',
+      //   category: '',
+      //   categoryId: '',
+      //   mapping: 'pathname',
+      //   reactionsEnabled: true,
+      //   inputPosition: 'top',
+      // },
+    },
+  }),
+})

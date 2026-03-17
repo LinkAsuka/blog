@@ -1,0 +1,16 @@
+<template><div><!-- more -->
+<h2 id="起因" tabindex="-1"><a class="header-anchor" href="#起因"><span>起因</span></a></h2>
+<p>我在计算table组件的高度时使用了window.resize来计算窗口高度变化时表格的滚动条,一开始没有什么问题</p>
+<p>直到我写了一个抽屉,打开抽屉里面有个高度定为 auto 的table,当抽屉关闭的时候,原来外层的表格的高度变成了auto</p>
+<h3 id="window-resize" tabindex="-1"><a class="header-anchor" href="#window-resize"><span>window.resize</span></a></h3>
+<p>是一个直接在 window 对象上调用的方法，用于在窗口大小改变时触发相应的操作。</p>
+<p>这个方法通常用于执行一些与窗口大小直接相关的计算、操作或更新。例如，你可以在 window.resize 中编写代码来重新计算页面布局、调整元素大小或执行其他与窗口大小相关的操作。</p>
+<h3 id="window-addeventlistener-resize-handler" tabindex="-1"><a class="header-anchor" href="#window-addeventlistener-resize-handler"><span>window.addEventListener(&quot;resize&quot;, handler)</span></a></h3>
+<p>利用了事件监听器来监听窗口大小改变事件，并在事件发生时调用相应的处理函数。</p>
+<p>这种方式通常用于在窗口大小改变时触发某些操作，例如重新计算元素的位置、重新布局页面等。你可以通过添加事件监听器来注册窗口大小改变事件的处理函数，以便在窗口大小改变时执行相应的操作。</p>
+<h3 id="总结" tabindex="-1"><a class="header-anchor" href="#总结"><span>总结</span></a></h3>
+<p>window.resize 是直接调用 window 对象上的方法，用于在窗口大小改变时立即触发相应的操作。</p>
+<p>这个方法通常用于执行一些与窗口大小直接相关的计算或操作<code v-pre>但它并不会直接触发 HTML 内容的更新</code></p>
+</div></template>
+
+

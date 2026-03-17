@@ -1,19 +1,27 @@
 {
-  "name": "press",
+  "name": "asuka",
+  "type": "module",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
-  "dependencies": {
-    "vuepress": "^1.9.7"
+  "description": "Asuka",
+  "packageManager": "pnpm@9.12.1",
+  "author": "安琪叶",
+  "license": "MIT",
+  "engines": {
+    "node": "^18.20.0 || >=20.0.0"
   },
-  "devDependencies": {},
   "scripts": {
-    "dev": "vuepress dev docs --temp .temp",
-    "dev_t": "set NODE_OPTIONS=\"--openssl-legacy-provider\" & npm run dev\n",
-    "build": "vuepress build docs",
-    "build_t": "set NODE_OPTIONS=\"--openssl-legacy-provider\" & npm run build\n"
+    "docs:dev": "vuepress dev docs",
+    "docs:dev-clean": "vuepress dev docs --clean-cache --clean-temp",
+    "docs:build": "vuepress build docs --clean-cache --clean-temp",
+    "docs:preview": "http-server docs/.vuepress/dist",
+    "vp-update": "pnpm dlx vp-update"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC"
+  "devDependencies": {
+    "@vuepress/bundler-vite": "2.0.0-rc.19",
+    "vuepress": "2.0.0-rc.19",
+    "vuepress-theme-plume": "1.0.0-rc.123",
+    "http-server": "^14.1.1",
+    "vue": "^3.5.13",
+    "sass-embedded": "^1.83.0"
+  }
 }

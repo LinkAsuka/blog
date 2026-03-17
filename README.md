@@ -1,11 +1,27 @@
-安装依赖
-npm i
+# asuka
 
-运行
-npm run dev
-兼容运行
-npm run dev_t
+The Site is generated using [vuepress](https://vuepress.vuejs.org/) and [vuepress-theme-plume](https://github.com/pengzhanbo/vuepress-theme-plume)
 
-打包
-npm run build
-npm run build_t
+## Install
+
+```sh
+pnpm i
+```
+
+## Usage
+
+```sh
+# start dev server
+pnpm docs:dev
+# build for production
+pnpm docs:build
+# preview production build in local
+pnpm docs:preview
+# update vuepress and theme
+pnpm vp-update
+```
+
+## Documents
+
+- [vuepress](https://vuepress.vuejs.org/)
+- [vuepress-theme-plume](https://theme-plume.vuejs.press/)
