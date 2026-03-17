@@ -1,5 +1,5 @@
 import comp from "/Users/yeanqi/blog1/docs/.vuepress/.temp/pages/article/qm28ojvv/index.html.vue"
-const data = JSON.parse("{\"path\":\"/article/qm28ojvv/\",\"title\":\"推荐的算法学习网站\",\"lang\":\"zh-CN\",\"frontmatter\":{\"title\":\"推荐的算法学习网站\",\"createTime\":\"2025/01/13 11:50:25\",\"tags\":[\"学习网站\"],\"permalink\":\"/article/qm28ojvv/\",\"gitInclude\":[]},\"headers\":[],\"readingTime\":{\"minutes\":0.11,\"words\":32},\"filePathRelative\":\"preview/知识/algo.md\",\"categoryList\":[{\"id\":\"5ebeb6\",\"sort\":10000,\"name\":\"preview\"},{\"id\":\"e6ebfd\",\"sort\":10004,\"name\":\"知识\"}],\"bulletin\":false}")
+const data = JSON.parse("{\"path\":\"/article/qm28ojvv/\",\"title\":\"推荐的算法学习网站\",\"lang\":\"zh-CN\",\"frontmatter\":{\"title\":\"推荐的算法学习网站\",\"createTime\":\"2025/01/13 11:50:25\",\"tags\":[\"学习网站\"],\"permalink\":\"/article/qm28ojvv/\",\"gitInclude\":[]},\"headers\":[],\"readingTime\":{\"minutes\":0.11,\"words\":32},\"filePathRelative\":\"preview/知识/algo.md\",\"categoryList\":[{\"id\":\"5ebeb6\",\"sort\":10000,\"name\":\"preview\"},{\"id\":\"e6ebfd\",\"sort\":10003,\"name\":\"知识\"}],\"bulletin\":false}")
 export { comp, data }
 
 if (import.meta.webpackHot) {

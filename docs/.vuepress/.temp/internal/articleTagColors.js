@@ -1,5 +1,5 @@
 import './articleTagColors.css'
-export const articleTagColors = {"VUE3源码":"nl6x","正则":"lqd6","基础":"ybsp","学习网站":"ybsp","工具":"t414","部署":"ybsp","markdown":"kwru","问题":"o1in","macOs":"60y1","高效编码":"f05n","样式":"zxr1"}
+export const articleTagColors = {"VUE3源码":"5j63","正则":"bmke","基础":"6dx4","学习网站":"6dx4","工具":"689u","部署":"6dx4","markdown":"on4l","问题":"5xnx","macOs":"avvc","高效编码":"r71u","样式":"hk8h"}
 
 if (import.meta.webpackHot) {
   import.meta.webpackHot.accept()
